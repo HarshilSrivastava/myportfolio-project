@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load staticfiles %}
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>Harshil Srivastava</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand self" href="{% url 'home'%}"><img width="120" height="30" src="{% static 'LogoMakr_5VDqc3.png' %}" style="position: relative;"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="{% static 'Harshil_Resume_Final.pdf'%}" target="_blank">RESUME</a></li>
+                <li><a href="{% url 'allblogs'%}">BLOG</a></li>
+                <li><a href="mailto:harshil.srivastava758@gmail.com">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+    <img src="{%static 'picture.jpg'%}" class="img-responsive img-circle margin" style="display:inline" alt="harshil" width="300" height="300">
+    <h1>HARSHIL SRIVASTAVA</h1>
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+    <h3 class="margin">About Me!</h3>
+    <p>I am a final year student, pursuing B.Tech in CSE from ABES Engineering College.</p>
+    <p>Skilled in Data Structures and technologies like Django, Python, Java.</p>
+    <hr width="80px">
+    <h3 style="padding-top: 20px">Find Me At!</h3>
+    <ul class="list-inline mod">
+        <li class="mod">
+            <a href="https://www.linkedin.com/in/harshil-srivastava-038006148/" target="_blank"><img class="img-responsive img-circle" src="{%static 'linkedin.png'%}" alt="Linkedin Link" style="height:50px;width:50px;"></a>
+        </li>
+        <li class="mod">
+            <a href="https://www.codechef.com/users/iamharshil" target="_blank"><img class="img-responsive img-circle" src="{%static 'codechef.jpg'%}" alt="Codechef Link" style="height:50px;width:50px;"></a>
+        </li>
+        <li class="mod">
+            <a href="https://www.hackerrank.com/harshil_srivast1" target="_blank"><img class="img-responsive img-circle" src="{%static 'hackerrank.png'%}" alt="Hackerrank Link" style="height:50px;width:50px;"></a>
+        </li>
+        <li class="mod">
+            <a href="https://m.me/iamharshil" target="_blank"><img class="img-responsive img-circle" src="{%static 'messenger.png'%}" alt="Messenger Link" style="height:52px;width:52px;"></a>
+        </li>
+        <li class="mod">
+            <a href="https://www.hackerearth.com/@harshil.srivastava758" target="_blank"><img class="img-responsive img-circle" src="{%static 'hackerearth.png'%}" alt="hackerearth Link" style="height:50px;width:50px;"></a>
+        </li>
+        <li class="mod">
+            <a href="https://github.com/HarshilSrivastava" target="_blank"><img class="img-responsive img-circle" src="{%static 'github.png'%}" alt="github Link" style="height:50px;width:50px;"></a>
+        </li>
+        <li class="mod">
+            <a href="https://twitter.com/iam_Harshil" target="_blank"><img class="img-responsive img-circle" src="{%static 'twitter.png'%}" alt="twitter Link" style="height:60px;width:60px;"></a>
+        </li>
+        <li class="mod">
+            <a href="https://www.quora.com/profile/Harshil-Srivastava-2" target="_blank"><img class="img-responsive img-circle" src="{%static 'quora.png'%}" alt="Quora Link" style="height:50px;width:50px;"></a>
+        </li>
+    </ul>
+</div>
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+        <p>© Harshil Srivastava {% now 'Y' %}</p>
+</footer>
+
+</body>
+</html>

@@ -9,6 +9,7 @@ class Blog(models.Model):
     def __str__(self):
         return self.title
     def summary(self):
-        return self.body[:100]
+        s=self.body.split('.')
+        return s[0]+'.'
     def pub_date_new(self):
         return self.pub_date.strftime('%b %e %Y')
