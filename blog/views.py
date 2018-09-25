@@ -5,7 +5,7 @@ from .models import Blog
 def home(request):
     return render(request, 'blog/home.html')
 def allblogs(request):
-    blogs = Blog.objects
+    blogs = Blog.objects.order_by('-pub_date')
     return render(request, 'blog/allblogs.html',{'blogs':blogs})
 def detail(request,blog_id):
     detailblog =get_object_or_404(Blog,pk=blog_id)
